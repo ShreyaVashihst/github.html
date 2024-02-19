@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:lightcyan;
+        text-align: center;
+        font-size: 40px;
+        color:black;
+        text-decoration:wavy;
+        text-shadow: aliceblue;
+        
+        
+
+    }
+    img{
+        width: 200px;
+        height: auto;
+        float:right;
+        border-style: groove;
+        box-shadow:aliceblue;
+    }
+   .abc{
+        width: 200px;
+        height: auto;
+        float:left;
+        border-style: groove;
+        box-shadow: azure;
+
+    }
+    .efg{
+        background-color:rgb(39, 59, 76);
+        text-align:left;
+        font-size:large;
+        color:aliceblue;
+        text-decoration:wavy;
+        text-shadow: aliceblue;
+        list-style-type: circle;
+        text-decoration-style: wavy;
+        border-radius:10%;
+        border-style: groove;
+        border-color: aqua;}
+ .flex-container{
+    display: flex;
+    background-color: rgb(17, 14, 4);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:black;
+    
+}
+.flex-container > div{
+    background-color: crimson;
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    flex-grow:auto;
+    flex-shrink: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    background-color:black;
+    padding:5px;
+    margin:5px;
+    border-radius:  20px; 
+    border-color: aqua;
+}
+.grid-container>div{
+    background-color:cornflowerblue;
+    padding:5px;
+    margin:5px;
+    border-radius:  50px; 
+    border-color: aqua;
+    
+}
+.item1{
+   /* grid-column-start:1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end:6;*/
+   /* grid-column:1 / span 4;
+    grid-area: 1/2/2/4;
+    column-gap:10px;
+    row gap:10px;*/
+    justify-content:space-between;
+
+
+}
+.trans{
+    background-color: blue;
+    width: 100px;
+    height:100px;
+    margin-top:10px;
+    transition-property:width;
+    transition-duration: 5s;
+    transition-timing-function:  ease-in-out;
+
+}
+.trans:hover{
+   /* width:100px;*/
+    border-radius:50%;
+}
+.anime{
+    width:100px;
+    height:100px;
+    background-color:yellow;
+    margin-top:25px;
+    animation-name:anime;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:alternate;
+}
+@keyframes anime{
+    0%{background-color:yellow;} 20% {background-color:green;}40%{background-color: aquamarine;}60%{background-color: black;}
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: brown;
+    }
+}
+.class{
+    background-color: black;
+}
+.class a{
+    color:aliceblue;
+    
+
+}
+
+ 
+</style>
+<body>
+    
+    <h><i><u>Election campaign</u></i></h>
+    
+    <div class="abc">
+    
+    
+        <img src="https://i.pinimg.com/236x/ab/b5/7e/abb57e6b8a10c384cc9c87ff82148fa8.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="https://i.pinimg.com/736x/d9/e4/d2/d9e4d2dc010d3211ac52b6004a093235.jpg">
+    <div class="efg">
+        <ul>
+            <li>Voting is the representation of our commitment to ourselves, each other, this nation and this world.</li>
+            <li> The disregard of one voter in a democracy impairs the safety of all.</li>
+            <li>Voting is the most valuable right of every citizen, and we have a moral duty to ensure the integrity of our voting process.</li>
+            <li> Democracy is not only about the right to vote, and it is the right to live in dignity.</li>
+            <li>Democracy is about voting, and it’s about a majority vote. And it’s time that we began exercising the Democratic process</li>
+            <li> Voting is as much an sentimental act as it is an intellectual one</li>
+            <li> If you don’t cast your vote, you lose the right to protest</li>
+            <li>Each election is defined by the people who show up.</li>
+                
+                
+                
+        </ul>
+    </div>
+    
+    
+<br>
+
+<div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+</div>
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+</div>
+<div class="trans">
+
+</div>
+<div class="anime">
+
+</div>
+<div class="class">
+    <a href="  ">home</a>
+    <a href="  ">product</a>
+    <a href="  ">promo</a>
+    <a href="  ">order</a>
+    <a href="  ">contact</a>
+</div>
+</div>
+<p id="demo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore.</p>
+<button type="button" onclick="document.getElementById('demo1').innerHTML='hello g13'">change</button>
+<img src="download.jpeg" alt="" style="width: 626px;height:417px;">
+<button type="button" onclick="document.getElementById('demo1').src='download2.jpeg'">turn on</button>
+<p id="st1">Lorem ipsum dolor sit amet consectetur.</p>
+<button type="button" onclick="document.getElementById('st1').style.fontsize='40px';">font</button>
+<button type="button" onclick="document.getElementById('st1').style.display='none';">clear</button>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
